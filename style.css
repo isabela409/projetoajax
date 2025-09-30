@@ -8,49 +8,67 @@
 /* Corpo da página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #fdf6fb, #f9f9f9);
     color: #333;
-    padding: 20px;
+    padding: 25px 15px;
 }
 
 /* Menu de navegação */
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     background-color: #fff;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
+    padding: 18px 0;
+    box-shadow: 0 4px 12px rgba(197, 48, 160, 0.2);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    transition: box-shadow 0.3s ease;
+}
+
+nav:hover {
+    box-shadow: 0 6px 20px rgba(197, 48, 160, 0.35);
 }
 
 nav a {
     text-decoration: none;
     color: rgb(197, 48, 160);
-    font-size: 1.5em;
-    transition: color 0.3s ease;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
     color: rgb(158, 31, 129);
+    background-color: #f5e1f6;
+    box-shadow: 0 3px 8px rgba(197, 48, 160, 0.25);
 }
 
 /* Área onde o conteúdo carregado vai aparecer */
 .pagina {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 30px 25px;
+    background: #ffffffcc;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    color: #2c2c2c;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Links dentro da página */
 .pagina a {
-    color: #3498db;
+    color: #8e44ad;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .pagina a:hover {
     text-decoration: underline;
+    color: #5e2a7e;
 }
