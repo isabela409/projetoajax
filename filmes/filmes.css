@@ -1,53 +1,56 @@
-/* Reset básico */
+/* Reset básico moderno */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* Corpo da página com efeito sutil de gradiente e centralização */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f0eaff, #d6c1ff);
-    color: #2c2c2c;
-    padding: 50px 20px;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #e0d6f9, #f7f3ff);
+    color: #2d2d2d;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
-/* Título principal */
+/* Título principal com estilo neon suave */
 h1 {
-    color: #6a1b9a;
-    font-size: 3rem;
+    color: #5e35b1;
+    font-size: 3.2rem;
     margin-bottom: 40px;
     text-align: center;
-    text-shadow: 2px 2px 6px rgba(106, 27, 154, 0.3);
-    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(94, 53, 177, 0.2);
+    letter-spacing: 1.5px;
+    font-weight: 700;
 }
 
-/* Lista de filmes */
+/* Lista com efeito glassmorphism mais moderno */
 ul {
     list-style: none;
     width: 100%;
-    max-width: 650px;
-    background: #ffffffcc; /* Leve transparência */
+    max-width: 680px;
+    background: rgba(255, 255, 255, 0.15);
     padding: 30px 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(106, 27, 154, 0.2);
-    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(94, 53, 177, 0.15);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
 }
 
-/* Estilo dos itens */
+/* Itens com mais espaço e estilo clean */
 li {
-    padding: 16px 20px;
-    border-bottom: 1.5px solid #d1c4e9;
-    font-size: 1.3rem;
-    color: #4a148c;
-    font-weight: 600;
-    transition: background-color 0.4s ease, transform 0.3s ease;
-    border-radius: 8px;
+    padding: 18px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 1.25rem;
+    color: #4527a0;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 10px;
 }
 
 /* Remove a borda do último item */
@@ -55,11 +58,11 @@ li:last-child {
     border-bottom: none;
 }
 
-/* Hover mais elegante */
+/* Efeito hover com destaque */
 li:hover {
-    background-color: #e1bee7;
+    background-color: rgba(226, 204, 255, 0.4);
     cursor: pointer;
-    transform: translateX(8px);
-    box-shadow: 0 4px 15px rgba(106, 27, 154, 0.3);
-    color: #3a0078;
+    transform: scale(1.02) translateX(6px);
+    box-shadow: 0 6px 18px rgba(94, 53, 177, 0.25);
+    color: #311b92;
 }
