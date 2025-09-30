@@ -1,0 +1,56 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(197, 48, 160);
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(158, 31, 129);
+}
+
+/* Área onde o conteúdo carregado vai aparecer */
+.pagina {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Links dentro da página */
+.pagina a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.pagina a:hover {
+    text-decoration: underline;
+}
